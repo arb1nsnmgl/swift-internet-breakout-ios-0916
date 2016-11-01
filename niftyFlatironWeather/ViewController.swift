@@ -15,15 +15,18 @@ class ViewController: UIViewController {
     let locationManager = CLLocationManager()
     var latitude = Double()
     var longitude = Double()
-   
+    var store = DarkSkyDataStore.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLocationManager()
-    
+        
+        store.getRepositoriesFromDarkSky {
+            DispatchQueue.main.async {
+            }
+        }
         
     }
-
 
 
 }
@@ -39,6 +42,8 @@ extension ViewController: CLLocationManagerDelegate{
         if let unwrappedlatitude = locationManager.location?.coordinate.latitude, let unwrappedLongitude = locationManager.location?.coordinate.longitude{
             self.latitude = unwrappedlatitude
             self.longitude = unwrappedLongitude
+            store.latitude = unwrappedlatitude
+            store.longitude = unwrappedLongitude
         }
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

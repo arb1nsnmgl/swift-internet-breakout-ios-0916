@@ -12,6 +12,10 @@
 		8F07727A1DC2FDEF0061A640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F0772781DC2FDEF0061A640 /* Main.storyboard */; };
 		8F07727C1DC2FDEF0061A640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F07727B1DC2FDEF0061A640 /* Assets.xcassets */; };
 		8F07727F1DC2FDEF0061A640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F07727D1DC2FDEF0061A640 /* LaunchScreen.storyboard */; };
+		A746187B1DC8CB560083ED99 /* DarkSkyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A746187A1DC8CB560083ED99 /* DarkSkyAPIClient.swift */; };
+		A746187D1DC8CBC70083ED99 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = A746187C1DC8CBC70083ED99 /* Secret.swift */; };
+		A746187F1DC8CCEE0083ED99 /* DarkSkyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A746187E1DC8CCEE0083ED99 /* DarkSkyRepository.swift */; };
+		A74618811DC8CDF50083ED99 /* DarkSkyDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74618801DC8CDF50083ED99 /* DarkSkyDataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		8F07727B1DC2FDEF0061A640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F07727E1DC2FDEF0061A640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F0772801DC2FDEF0061A640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A746187A1DC8CB560083ED99 /* DarkSkyAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkSkyAPIClient.swift; sourceTree = "<group>"; };
+		A746187C1DC8CBC70083ED99 /* Secret.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		A746187E1DC8CCEE0083ED99 /* DarkSkyRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkSkyRepository.swift; sourceTree = "<group>"; };
+		A74618801DC8CDF50083ED99 /* DarkSkyDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkSkyDataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		8F0772731DC2FDEF0061A640 /* niftyFlatironWeather */ = {
 			isa = PBXGroup;
 			children = (
-				8F0772741DC2FDEF0061A640 /* AppDelegate.swift */,
 				8F0772761DC2FDEF0061A640 /* ViewController.swift */,
+				A746187C1DC8CBC70083ED99 /* Secret.swift */,
 				8F0772781DC2FDEF0061A640 /* Main.storyboard */,
+				A74618791DC8CB110083ED99 /* Supporting Files */,
+				A746187A1DC8CB560083ED99 /* DarkSkyAPIClient.swift */,
+				A746187E1DC8CCEE0083ED99 /* DarkSkyRepository.swift */,
+				A74618801DC8CDF50083ED99 /* DarkSkyDataStore.swift */,
+			);
+			path = niftyFlatironWeather;
+			sourceTree = "<group>";
+		};
+		A74618791DC8CB110083ED99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F0772741DC2FDEF0061A640 /* AppDelegate.swift */,
 				8F07727B1DC2FDEF0061A640 /* Assets.xcassets */,
 				8F07727D1DC2FDEF0061A640 /* LaunchScreen.storyboard */,
 				8F0772801DC2FDEF0061A640 /* Info.plist */,
 			);
-			path = niftyFlatironWeather;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A746187B1DC8CB560083ED99 /* DarkSkyAPIClient.swift in Sources */,
+				A746187F1DC8CCEE0083ED99 /* DarkSkyRepository.swift in Sources */,
+				A746187D1DC8CBC70083ED99 /* Secret.swift in Sources */,
+				A74618811DC8CDF50083ED99 /* DarkSkyDataStore.swift in Sources */,
 				8F0772771DC2FDEF0061A640 /* ViewController.swift in Sources */,
 				8F0772751DC2FDEF0061A640 /* AppDelegate.swift in Sources */,
 			);
@@ -302,6 +326,7 @@
 				8F0772851DC2FDEF0061A640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
